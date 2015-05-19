@@ -1,0 +1,7 @@
+%h1= @posao.title
+%p= @posao.description
+%p= @posao.company
+
+= link_to 'Home', root_path
+= link_to 'Edit', edit_posao_path
+= link_to 'Delete', posao_path(@posao), method: :delete, data: { confirm: "Are you sure?"}

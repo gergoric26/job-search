@@ -1,0 +1,5 @@
+- @posaos.each do |posao|
+	%h2= link_to posao.title, posao
+	%p= posao.company
+
+= link_to 'New Job', new_posao_path
